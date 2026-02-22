@@ -13,6 +13,7 @@ app.add_middleware(
     allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
+    Access-Control-Allow-Origin= ["*"]
 )
 
 # 2. Nuclear Option: Force headers on every single request
@@ -81,3 +82,4 @@ async def process_file(
         }
     
     return {"message": "Success"}
+
